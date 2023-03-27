@@ -1,0 +1,11 @@
+@use '../util/' as util;
+
+body {
+    font-family: util.$redHat;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
