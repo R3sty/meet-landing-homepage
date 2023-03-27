@@ -1,6 +1,6 @@
 const Header = () => {
 	return (
-		<div>
+		<div className='header-container'>
 			<h1>Header Section works</h1>
 			<h2>
 				Group Chat for Everyone. Meet makes it easy to connect with others

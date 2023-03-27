@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div>
+		<div className='footer-container'>
 			<h1>Footer Section works</h1>
 			<h2>
 				02 Experience more together Stay connected with reliable HD meetings and

@@ -1,6 +1,6 @@
 const Hero = () => {
 	return (
-		<div>
+		<div className='hero-container'>
 			<h1>Hero Section works</h1>
 			<h2>
 				01 Built for modern use Smarter meetings, all in one place Send
