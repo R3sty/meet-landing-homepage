@@ -1,12 +1,15 @@
 {
   "name": "meet-landing-page",
+  "homepage": "https://r3sty.github.io/meet-landing-page/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,7 +19,10 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.1",
     "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "vite-plugin-sass": "^0.1.0"
   }
 }
