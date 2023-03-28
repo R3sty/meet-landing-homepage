@@ -54,6 +54,11 @@ const Hero = () => {
 					></Button>
 				</div>
 			</div>
+			<div className='__divider-container'>
+				<div className='__divider-container __divider'>
+					<span className='__divider-container __divider-number'>01</span>
+				</div>
+			</div>
 		</main>
 	);
 };
