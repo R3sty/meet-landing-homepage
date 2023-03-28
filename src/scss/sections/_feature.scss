@@ -1,8 +1,7 @@
 @use '../util/' as util;
 
 .feature-container {
-    padding-top: util.rem(128);
-    margin-top: util.rem(128);
+    margin-top: util.rem(64);
     display: block;
     justify-content: center;
     text-align: center;

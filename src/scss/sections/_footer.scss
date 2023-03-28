@@ -1,5 +1,31 @@
 @use '../util/' as util;
 
 .footer-container {
-    background-color: var(--gray);
+
+    .__footer-image {
+        width: full;
+        height: util.rem(428);
+        position: relative;
+        background-image: url('/image-footer.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+
+        /* Overlay with semi-transparent color */
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--teal);
+            mix-blend-mode: normal;
+            opacity: 0.75;
+            /* semi-transparent black color */
+        }
+    }
+
+
+
 }

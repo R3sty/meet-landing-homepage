@@ -20,11 +20,6 @@ const Feature = () => {
 				all in one workspace. Control who can join with invite-only team access,
 				data encryption, and data export.
 			</p>
-			<div className='__divider-container'>
-				<div className='__divider-container __divider'>
-					<span className='__divider-container __divider-number'>02</span>
-				</div>
-			</div>
 		</main>
 	);
 };
