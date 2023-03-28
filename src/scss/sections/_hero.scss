@@ -52,46 +52,5 @@
         }
     }
 
-    .__divider-container {
-        margin-top: util.rem(64);
-        margin-bottom: util.rem(64);
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
 
-        &.__divider {
-            position: absolute;
-            width: util.rem(56);
-            height: util.rem(56);
-            border-radius: 50%;
-            background-color: var(--white);
-            border: util.rem(1) solid hsl(240, 9%, 85%);
-            text-align: center;
-            line-height: 50px;
-            font-size: 24px;
-            font-weight: bold;
-
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: util.rem(-85);
-                left: 50%;
-                transform: translateX(00%);
-                width: util.rem(0.5);
-                height: util.rem(84);
-                border: util.rem(0.5);
-                background-color: hsl(240, 9%, 85%);
-            }
-        }
-
-        &.__divider-number {
-            position: absolute;
-            transform: translate(-50%, -120%);
-            color: hsl(240, 6%, 35%);
-            font-size: util.rem(16);
-            font-weight: 900;
-            opacity: 1;
-        }
-    }
 }

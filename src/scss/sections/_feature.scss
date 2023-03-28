@@ -1,6 +1,45 @@
 @use '../util/' as util;
 
 .feature-container {
-    padding-top: util.rem(64);
+    padding-top: util.rem(128);
     margin-top: util.rem(128);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-inline: util.rem(20);
+
+    .__img-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: util.rem(20);
+        justify-content: space-evenly;
+
+        img {
+            width: util.rem(151);
+            height: util.rem(143);
+            border-radius: util.rem(10);
+        }
+    }
+
+    h2 {
+        padding-top: util.rem(64);
+        font-size: util.rem(16);
+        color: var(--teal);
+        letter-spacing: util.rem(4);
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: util.rem(32);
+        font-weight: 900;
+        line-height: util.rem(36);
+
+        padding-bottom: util.rem(32);
+    }
+
+    p {
+        color: var(--gray);
+        font-size: util.rem(16);
+        line-height: util.rem(26);
+    }
 }
