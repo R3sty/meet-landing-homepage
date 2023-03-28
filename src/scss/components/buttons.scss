@@ -1,0 +1,53 @@
+@use '../util/' as util;
+
+// Define base button styles
+@mixin button-styles {
+    display: inline-block;
+    width: auto;
+    font-size: util.rem(16);
+    font-family: util.$redHat;
+    padding: 0.5em;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    // Default color scheme
+    color: var(--white);
+    background-color: var(--teal);
+    //border-color: #007bff;
+
+    // Hover state
+    &:hover {
+        background-color: darken(#007bff, 10%);
+        border-color: darken(#007bff, 10%);
+    }
+}
+
+//Define button variables
+$button-color: var(--teal);
+$button-bg-color: var(--white);
+$button-border-color: var(--teal);
+
+// Define a mixin to override the button variables
+@mixin button-override-styles {
+    color: var(--white);
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+// Define the button class
+.button {
+    @include button-styles;
+    color: var(--white);
+    background-color: var(--teal);
+    border-color: var(--teal);
+    font-weight: 900;
+
+
+    // Override mixin to change button styles for a specific use case
+    &.__secondary {
+        @include button-override-styles;
+    }
+}

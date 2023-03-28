@@ -2,4 +2,55 @@
 
 .hero-container {
     background-color: var(--light-teal);
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+    .__logo {
+        margin-top: util.rem(54);
+    }
+
+    .__image-container {
+        width: full;
+        height: util.rem(153);
+        display: flex;
+        margin-top: util.rem(54);
+
+
+        // .__left-img {
+        //     transform: translateX(util.rem(-50));
+        // }
+
+        // .__right-img {
+        //     transform: translateX(util.rem(50));
+        // }
+    }
+
+    .__hero-content {
+        display: grid;
+        justify-content: center;
+
+        & h1 {
+            font-size: util.rem(40);
+            margin-top: util.rem(48);
+            margin-inline: util.rem(24);
+        }
+
+        & h2 {
+            font-size: util.rem(16);
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .__buttons {
+            display: grid;
+
+
+        }
+
+    }
+
+    .__download-button {
+        background-color: pink;
+    }
 }
