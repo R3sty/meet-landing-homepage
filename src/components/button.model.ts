@@ -3,7 +3,7 @@ import { MouseEventHandler } from "react";
 interface GlobalButton {
     className?: string;
     type: 'button' | 'submit';
-    buttonText: string;
+    buttonText: string | JSX.Element;
     onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 

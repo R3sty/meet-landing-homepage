@@ -40,7 +40,11 @@ const Hero = () => {
 				<div className='__buttons'>
 					<Button
 						type={'submit'}
-						buttonText={'Download v1.3'}
+						buttonText={
+							<span>
+								Download <span className='__version-text'> v1.3</span>
+							</span>
+						}
 						className='button'
 					></Button>
 					<Button

@@ -1,7 +1,6 @@
 @use '../util/' as util;
 
 .hero-container {
-    background-color: var(--light-teal);
     display: block;
     justify-content: center;
     text-align: center;
@@ -40,12 +39,17 @@
             font-size: util.rem(16);
             color: var(--gray);
             font-weight: 500;
+            margin-inline: util.rem(24);
         }
 
         .__buttons {
             display: grid;
+            justify-content: center;
 
 
+            .__version-text {
+                color: var(--light-teal);
+            }
         }
 
     }

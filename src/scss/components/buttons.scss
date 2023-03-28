@@ -2,16 +2,17 @@
 
 // Define base button styles
 @mixin button-styles {
-    display: inline-block;
-    width: auto;
+    margin: auto;
     font-size: util.rem(16);
     font-family: util.$redHat;
-    padding: 0.5em;
+    padding: util.rem(16);
     border: 2px solid;
     border-radius: 0.5rem;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    border-radius: util.rem(29);
+    margin-top: util.rem(16);
 
     // Default color scheme
     color: var(--white);
@@ -35,6 +36,7 @@ $button-border-color: var(--teal);
     color: var(--white);
     background-color: var(--purple);
     border-color: var(--purple);
+    width: util.rem(139)
 }
 
 // Define the button class
@@ -44,9 +46,10 @@ $button-border-color: var(--teal);
     background-color: var(--teal);
     border-color: var(--teal);
     font-weight: 900;
-
-
+    padding-inline: util.em(20);
+    width: util.rem(193);
     // Override mixin to change button styles for a specific use case
+
     &.__secondary {
         @include button-override-styles;
     }
