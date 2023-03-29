@@ -1,6 +1,7 @@
 @use '../util/' as util;
 
 .footer-container {
+    padding-top: util.rem(92);
 
     .__footer-image {
         width: full;
@@ -26,6 +27,35 @@
         }
     }
 
+    .__footer-content {
+        margin-top: util.rem(24);
+        display: block;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        height: util.rem(100);
+        z-index: 1;
+        background-color: transparent;
+        color: var(--white);
+        padding-inline: util.rem(24);
 
+        h1 {
+            padding-top: util.rem(24);
+        }
 
+        p {
+            padding-top: util.rem(24);
+            font-size: util.rem(18);
+            line-height: util.rem(26);
+        }
+
+        button {
+            width: util.rem(193);
+
+            .__version-text {
+                color: var(--light-purple);
+            }
+        }
+
+    }
 }

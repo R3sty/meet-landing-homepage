@@ -1,13 +1,13 @@
 @use '../util/' as util;
 
 .__divider-container {
-    margin-top: util.rem(128);
+    margin-top: util.rem(64);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 
     &.__divider {
-        position: relative;
+        position: absolute;
         width: util.rem(56);
         height: util.rem(56);
         border-radius: 50%;
@@ -35,7 +35,7 @@
 
     &.__divider-number {
         position: absolute;
-        transform: translate(-50%, -250%);
+        transform: translate(-50%, -120%);
         color: hsl(240, 6%, 35%);
         font-size: util.rem(16);
         font-weight: 900;

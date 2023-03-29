@@ -2,12 +2,15 @@
 
 .feature-container {
     margin-top: util.rem(64);
+    padding-top: util.rem(64);
     display: block;
     justify-content: center;
     text-align: center;
     margin-inline: util.rem(20);
 
     .__img-container {
+        margin-top: util.rem(32);
+        padding-top: util.rem(64);
         display: flex;
         flex-wrap: wrap;
         gap: util.rem(20);
@@ -40,5 +43,6 @@
         color: var(--gray);
         font-size: util.rem(16);
         line-height: util.rem(26);
+        margin-inline: util.rem(20);
     }
 }

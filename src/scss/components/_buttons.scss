@@ -21,9 +21,10 @@
 
     // Hover state
     &:hover {
-        background-color: darken(#007bff, 10%);
-        border-color: darken(#007bff, 10%);
+        background-color: var(--light-teal);
+        border-color: var(--light-teal);
     }
+
 }
 
 //Define button variables
