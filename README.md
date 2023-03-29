@@ -49,4 +49,4 @@ This project was perfect to brush up on my layout skills and dive deeper into us
 ## Author
 
 - Frontend Mentor - [@R3sty](https://www.frontendmentor.io/profile/R3sty)
-- Twitter - [@yourusername](https://twitter.com/R3XIST)
+- Twitter - [@R3XIST](https://twitter.com/R3XIST)
