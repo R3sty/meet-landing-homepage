@@ -1,6 +1,6 @@
-import heroImageLeft from '../../public/assets/desktop/image-hero-left.png';
-import heroImageRight from '../../public/assets/desktop/image-hero-right.png';
-import heroTablet from '../../public/assets/tablet/image-hero.png';
+import heroImageLeft from '/public/assets/desktop/image-hero-left.png';
+import heroImageRight from '/public/assets/desktop/image-hero-right.png';
+import heroTablet from '/public/assets/tablet/image-hero.png';
 import Button from '../components/Button';
 
 const Hero = () => {

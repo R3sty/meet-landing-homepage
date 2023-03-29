@@ -28,18 +28,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./public/assets/meet-landing-desktop.png)
+![Mobile](./public/assets/meet-landing-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/R3sty/meet-landing-homepage)
+- Live Site URL: [Live](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
+  -Typescript
 - Sass
 
 ### What I learned

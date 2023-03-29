@@ -1,7 +1,7 @@
-import image1 from '../../public/assets/desktop/image-women-videochatting.jpg';
-import image2 from '../../public/assets/desktop/image-woman-in-videocall.jpg';
-import image3 from '../../public/assets/desktop/image-men-in-meeting.jpg';
-import image4 from '../../public/assets/desktop/image-man-texting.jpg';
+import image1 from '/public/assets/desktop/image-women-videochatting.jpg';
+import image2 from '/public/assets/desktop/image-woman-in-videocall.jpg';
+import image3 from '/public/assets/desktop/image-men-in-meeting.jpg';
+import image4 from '/public/assets/desktop/image-man-texting.jpg';
 
 const images = [image1, image2, image3, image4];
 
