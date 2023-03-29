@@ -36,8 +36,6 @@ Users should be able to:
 - Solution URL: [Solution](https://github.com/R3sty/meet-landing-homepage)
 - Live Site URL: [Live](https://your-live-site-url.com)
 
-## My process
-
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
@@ -46,16 +44,9 @@ Users should be able to:
 
 ### What I learned
 
-### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+This project was perfect to brush up on my layout skills and dive deeper into using React and Sass. It was a fun challenge and a great way to reinforce my knowledge of BEM methodology and Sass syntax and formulas.
 
 ## Author
 
 - Frontend Mentor - [@R3sty](https://www.frontendmentor.io/profile/R3sty)
 - Twitter - [@yourusername](https://twitter.com/R3XIST)
-
-## Acknowledgments
