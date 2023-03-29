@@ -37,7 +37,9 @@ $button-border-color: var(--teal);
     color: var(--white);
     background-color: var(--purple);
     border-color: var(--purple);
-    width: util.rem(139)
+    width: util.rem(139);
+
+
 }
 
 // Define the button class
@@ -53,5 +55,10 @@ $button-border-color: var(--teal);
 
     &.__secondary {
         @include button-override-styles;
+
+        &:hover {
+            background-color: var(--light-purple);
+            border-color: var(--light-purple);
+        }
     }
 }

@@ -15,17 +15,18 @@ const Footer = () => {
 						Stay connected with reliable HD meetings and unlimited one-on-one
 						and group video sessions.
 					</p>
-					<Button
-						type={'submit'}
-						buttonText={
-							<span>
-								Download <span className='__version-text'> v1.3</span>
-							</span>
-						}
-						className='button __secondary'
-					></Button>
+					<div className='__button'>
+						<Button
+							type={'submit'}
+							buttonText={
+								<span>
+									Download <span className='__version-text'> v1.3</span>
+								</span>
+							}
+							className='button __secondary'
+						></Button>
+					</div>
 				</div>
-				<div className='__footer-image'></div>
 			</div>
 		</>
 	);

@@ -1,34 +1,37 @@
 @use '../util/' as util;
 
+.__divider-container {
+    margin-bottom: util.rem(150);
+}
+
 .footer-container {
-    padding-top: util.rem(92);
+    padding-top: util.rem(80);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: util.rem(428);
+    position: relative;
+    background-image: url('../../../public/assets/mobile/image-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 
-    .__footer-image {
-        width: full;
-        height: util.rem(428);
-        position: relative;
-        background-image: url('/image-footer.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-
-        /* Overlay with semi-transparent color */
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--teal);
-            mix-blend-mode: normal;
-            opacity: 0.75;
-            /* semi-transparent black color */
-        }
+    /* Overlay with semi-transparent color */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--teal);
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        /* semi-transparent black color */
     }
 
     .__footer-content {
-        margin-top: util.rem(24);
+        padding-top: 118;
         display: block;
         justify-content: center;
         text-align: center;
@@ -39,12 +42,8 @@
         color: var(--white);
         padding-inline: util.rem(24);
 
-        h1 {
-            padding-top: util.rem(24);
-        }
 
         p {
-            padding-top: util.rem(24);
             font-size: util.rem(18);
             line-height: util.rem(26);
         }
@@ -58,4 +57,60 @@
         }
 
     }
+}
+
+@include util.breakpoint(medium) {
+    .footer-container {
+        .__footer-content {
+            padding-inline: util.rem(97);
+        }
+    }
+}
+
+@include util.breakpoint(large) {
+    .footer-container {
+        height: util.rem(308);
+        background-image: url('../../../public/assets/desktop/image-footer.jpg');
+
+        .__footer-content {
+            display: block;
+            justify-content: center;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            text-align: left;
+            margin-inline: util.rem(165);
+            padding-inline: util.rem(40);
+            grid-gap: util.rem(20);
+
+
+            h1 {
+                font-size: util.rem(40);
+            }
+
+            p {
+                font-size: util.rem(18);
+
+
+            }
+
+            .__button {
+                display: block;
+                justify-content: center;
+                text-align: center;
+
+
+                button {
+                    width: util.rem(193);
+
+                    .__version-text {
+                        color: var(--light-purple);
+                    }
+                }
+            }
+        }
+    }
+
+
 }

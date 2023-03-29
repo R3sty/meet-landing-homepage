@@ -1,5 +1,6 @@
-import heroImageLeft from '../assets/desktop/image-hero-left.png';
-import heroImageRight from '../assets/desktop/image-hero-right.png';
+import heroImageLeft from '../../public/assets/desktop/image-hero-left.png';
+import heroImageRight from '../../public/assets/desktop/image-hero-right.png';
+import heroTablet from '../../public/assets/tablet/image-hero.png';
 import Button from '../components/Button';
 
 const Hero = () => {
@@ -25,13 +26,36 @@ const Hero = () => {
 			</svg>
 			<div className='__image-container'>
 				<img className='__left-img' src={heroImageLeft} alt='left hero'></img>
+				<div className='__hero-content-desktop'>
+					<h1>Group Chat for Everyone</h1>
+					<h2>
+						Meet makes it easy to connect with others face-to-face virtually and
+						collaborate across any device.
+					</h2>
+					<div className='__buttons'>
+						<Button
+							type={'submit'}
+							buttonText={
+								<span>
+									Download <span className='__version-text'> v1.3</span>
+								</span>
+							}
+							className='button'
+						></Button>
+						<Button
+							type={'submit'}
+							buttonText={'What is it?'}
+							className='button __secondary'
+						></Button>
+					</div>
+				</div>
 				<img
 					className='__right-img'
 					src={heroImageRight}
 					alt='right hero'
 				></img>
 			</div>
-			<div className='__hero-content'>
+			<div className='__hero-content-mobile'>
 				<h1>Group Chat for Everyone</h1>
 				<h2>
 					Meet makes it easy to connect with others face-to-face virtually and

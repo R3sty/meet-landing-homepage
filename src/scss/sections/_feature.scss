@@ -2,7 +2,6 @@
 
 .feature-container {
     margin-top: util.rem(64);
-    padding-top: util.rem(64);
     display: block;
     justify-content: center;
     text-align: center;
@@ -35,7 +34,6 @@
         font-size: util.rem(32);
         font-weight: 900;
         line-height: util.rem(36);
-
         padding-bottom: util.rem(32);
     }
 
@@ -44,5 +42,41 @@
         font-size: util.rem(16);
         line-height: util.rem(26);
         margin-inline: util.rem(20);
+    }
+}
+
+@include util.breakpoint(medium) {
+    .feature-container {
+        p {
+            margin-inline: util.rem(97)
+        }
+    }
+}
+
+@include util.breakpoint(large) {
+    .feature-container {
+        margin-inline: util.rem(450);
+
+
+        .__img-container {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: center;
+            grid-gap: util.rem(30);
+
+            img {
+                width: util.rem(255);
+                height: util.rem(242);
+            }
+        }
+
+        h1 {
+            font-size: util.rem(40);
+        }
+
+        p {
+            font-size: util.rem(18);
+            margin-inline: util.rem(12);
+        }
     }
 }
